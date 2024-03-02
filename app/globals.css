@@ -31,3 +31,10 @@ body {
     text-wrap: balance;
   }
 }
+
+.home {
+  background-image: url('images/train.jpg');
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+  opacity: 10%;
+}
