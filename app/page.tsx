@@ -2,11 +2,15 @@ export default async () => {
   const data = await getData();
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-neutral-800">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
         <div className="flex flex-col">
           {JSON.stringify(data)}
-          <img srcSet={data.url} alt="obrazok kocicky"/>
+          <img
+            srcSet={data.url}
+            width={300}
+            height={300}
+            alt="obrazok kocicky"/>
         </div>
       </div>
     </main>
