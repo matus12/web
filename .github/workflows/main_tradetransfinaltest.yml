@@ -53,6 +53,9 @@ jobs:
 
       - name: unzip artifact for deployment
         run: Expand-Archive release.zip
+
+      - name: Remove node_modules
+        run: Remove-Item node_modules -Recurse
       
       - name: Login to Azure
         uses: azure/login@v1
