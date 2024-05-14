@@ -58,7 +58,7 @@ jobs:
         run: |
           Remove-Item release.zip
           cd release
-          ls
+          Remove-Item node_modules
       
       - name: Login to Azure
         uses: azure/login@v1
