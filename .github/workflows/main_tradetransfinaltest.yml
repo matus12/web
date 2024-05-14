@@ -55,7 +55,8 @@ jobs:
         run: Expand-Archive release.zip
 
       - name: Remove node_modules
-        run: ls
+        run: |
+          Remove-Item release.zip
       
       - name: Login to Azure
         uses: azure/login@v1
